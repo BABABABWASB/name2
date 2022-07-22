@@ -1,0 +1,52 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+local Button = Instance.new("TextButton")
+local Button_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.Position = UDim2.new(0.478390455, 0, 0.187270492, 0)
+Main.Size = UDim2.new(0, 363, 0, 147)
+Main.Active = true 
+Main.Draggable = true 
+
+Text.Name = "Text"
+Text.Parent = Main
+Text.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Text.Size = UDim2.new(0, 363, 0, 50)
+Text.Font = Enum.Font.SourceSans
+Text.Text = "Test script"
+Text.TextColor3 = Color3.fromRGB(0, 0, 0)
+Text.TextSize = 14.000
+
+Button.Name = "Button"
+Button.Parent = Main
+Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button.Position = UDim2.new(0.0413223132, 0, 0.435374141, 0)
+Button.Size = UDim2.new(0, 138, 0, 36)
+Button.Font = Enum.Font.SourceSans
+Button.Text = "All star tower defense"
+Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button.TextSize = 14.000
+Button.MouseButton1Down:connect (function()
+    loadstring(game:HttpGet('https://script.karmapanda.dev/%27))()
+end)
+
+Button_2.Name = "Button"
+Button_2.Parent = Main
+Button_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.Position = UDim2.new(0.581267178, 0, 0.435374141, 0)
+Button_2.Size = UDim2.new(0, 136, 0, 36)
+Button_2.Font = Enum.Font.SourceSans
+Button_2.Text = "Anti afk"
+Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.TextSize = 14.000
+Button_2.MouseButton1Down:connect (function()
+    print('hi')
+end)
